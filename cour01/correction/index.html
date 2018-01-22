@@ -1,0 +1,25 @@
+<html>
+	<head>
+        <link href="/css/my.css" rel="stylesheet">
+        <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/node_modules/lodash/lodash.min.js"></script>
+        <script src="/js/my.js"></script>
+        <p>Hello <span id="myFood">Pizza</span>!</p>
+        <button class="btn btn-outline-warning btn-lg" onclick="alertFood()">Change</button>
+        <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a onclick="showPrice('pasta')" class="dropdown-item" href="#">Pasta</a>
+                  <a onclick="showPrice('pizza')" class="dropdown-item" href="#">Pizza</a>
+                  <a onclick="showPrice('salade')" class="dropdown-item" href="#">Salade</a>
+                </div>
+        </div>
+	</body>
+</html>
