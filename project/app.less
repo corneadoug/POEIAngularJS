@@ -1,0 +1,42 @@
+@import "bower_components/bootstrap/less/bootstrap.less";
+@import "bower_components/font-awesome/less/font-awesome.less";
+
+@import "variables.less";
+/* Add App LESS files below */
+@import "src/app/home/home.less";
+
+/* Add Fonts below */
+@fa-font-path: "bower_components/font-awesome/fonts";
+
+body {
+  font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: @blue1;
+}
+
+.myBox {
+  background-color: @blue2;
+  color: white;
+}
+
+.highscoreLink {
+  font-size: 12px;
+  text-decoration: underline;
+  color: white;
+  padding-top: 5px;
+  display: block;
+  cursor: pointer;
+  &:hover {
+    color: white;
+  }
+}
+
+.btn {
+  outline: none !important;
+}
+
+.lobsterFont {
+  font-family: 'Lobster', Arial, serif;
+}
+
+/* Required for Angular UI Bootstrap */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
