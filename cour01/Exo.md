@@ -58,8 +58,8 @@
 ```
 var plats = [
   { 'plat': 'pasta',  'prix': 10 },
-  { 'plat': 'pizza',    'active': 12 },
-  { 'plat': 'salade', 'active': 8 }
+  { 'plat': 'pizza',    'prix': 12 },
+  { 'plat': 'salade', 'prix': 8 }
 ];
 ```
 * Ajoutez une dropdown contenant le nom de tous ces plats
