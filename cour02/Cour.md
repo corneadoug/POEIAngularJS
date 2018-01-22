@@ -140,6 +140,13 @@ bower_components
 node_modules
 ```
 
+* Fichier Gruntfile.js, rajouter `reporterOutput` sous jshintrc
+```
+options: {
+      jshintrc: '.jshintrc',
+      reporterOutput: ""
+```
+
 * Creer des dossiers pour le code:
 
 ```
