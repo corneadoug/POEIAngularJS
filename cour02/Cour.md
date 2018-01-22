@@ -144,7 +144,7 @@ node_modules
 ```
 options: {
       jshintrc: '.jshintrc',
-      reporterOutput: ""
+      reporterOutput: ''
 ```
 
 * Creer des dossiers pour le code:
