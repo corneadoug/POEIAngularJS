@@ -129,7 +129,7 @@ On peut l'utiliser de la façon suivante:
 ```
 Il peut etre couplé avec `ng-controller` pour que chaque element puisse avoir son propre controller. (plusieurs instances du meme controller peuvent exister)
 
-## [nb-include](#ng-include)
+## [ng-include](#ng-include)
 
 `ng-include` est une facon de separer son code HTML sans faire de veritable composant Angular.
 
