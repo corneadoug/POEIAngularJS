@@ -22,6 +22,6 @@ Creez une nouvelle page `meteo`, cette page devra afficher: `il fait moche`
 
 * Creez le html et controller pour cette page dans un nouveau dossier
 
-* La page doit s'afficher a partir de l'url `localhost:9001/meteo`
+* La page doit s'afficher a partir de l'url `localhost:9001/#/meteo`
 
 * Le controller doit contenir le mot `moche` et le passez a la vue
