@@ -196,7 +196,7 @@ angular.module('MONAPP').config(function($routeProvider, $locationProvider) {
 
  Ajouter les fichiers suivants pour avoir une premiere page:
  
- `app/home/home.html`
+ `src/app/home/home.html`
  
  ```
  <div>
@@ -204,7 +204,7 @@ angular.module('MONAPP').config(function($routeProvider, $locationProvider) {
  </div>
  ```
  
- `app/home/home.controller.js`
+ `src/app/home/home.controller.js`
  
  ```
  (function() {
