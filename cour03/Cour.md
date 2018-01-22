@@ -2,11 +2,11 @@
 
 Bien que le $scope et AngularJS en general soit facile d'utilisation, de nombreuses bonnes pratiques ont été découvertes.
 
-Le [Styleguide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md) de Johnpapa fait partit de ces documents de references.
+Le [Styleguide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md) de Johnpapa fait parti de ces documents de references.
 
 Un concept important est celui de `controllerAs` et `ViewModel`
 
-En utilisant ce concept, on a plus besoin du $scope a l'interieur de nos controllers (gain de performances), et l'on peut facilement faire une séparation entre nos variables publiques (pour la vue) et privées (pour le controller uniquement)
+En utilisant ce concept, on a plus besoin du $scope à l'interieur de nos controllers (gain de performance), et l'on peut facilement faire une séparation entre nos variables publiques (pour la vue) et privées (pour le controller uniquement)
 
 ### Avant
 
