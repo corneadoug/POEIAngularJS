@@ -62,7 +62,7 @@ var plats = [
   { 'plat': 'salade', 'active': 8 }
 ];
 ```
-* Ajoutez une dropdown utilisant cet variable pour choisir le nom du plat
+* Ajoutez une dropdown contenant le nom de tous ces plats
 
 * Utilisez la fonction `findIndex` de lodash pour afficher le prix dans une alerte a chaque fois qu'un plat est selectionné.
 
