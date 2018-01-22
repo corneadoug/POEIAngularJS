@@ -95,7 +95,7 @@ Dans les framework JS, le serveur envoie tout le code d'un coup avec le fichier 
 En Angular, la configuration des routes se fait dans le fichier `app.js` de cette facon:
 
 ```
-angular.module('plop').config(function($routeProvider, $locationProvider) {
+angular.module('plop').config(function($routeProvider) {
 
     $routeProvider.when('/', {
         templateUrl: 'src/app/home/home.html',
@@ -103,10 +103,10 @@ angular.module('plop').config(function($routeProvider, $locationProvider) {
     });
     /* Add New Routes Above */
     $routeProvider.otherwise({redirectTo:'/'});
-    
-    $locationProvider.html5Mode(true);
 });
 ```
+
+**Attention** Les urls seront sous la forme: `monserveur/#/meteo`
 
 On Ajoute des cas de redirection (`when`) et une route par defaut (`otherwise`);
 
@@ -145,12 +145,6 @@ node_modules
 options: {
       jshintrc: '.jshintrc',
       reporterOutput: ""
-```
-
-* Ajouter dans le `<head>` de votre `index.html`
-
-```
-<base href="/">
 ```
 
 * Creer des dossiers pour le code:
