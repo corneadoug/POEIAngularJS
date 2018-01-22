@@ -95,7 +95,7 @@ Dans les framework JS, le serveur envoie tout le code d'un coup avec le fichier 
 En Angular, la configuration des routes se fait dans le fichier `app.js` de cette facon:
 
 ```
-angular.module('plop').config(function($routeProvider) {
+angular.module('plop').config(function($routeProvider, $locationProvider) {
 
     $routeProvider.when('/', {
         templateUrl: 'src/app/home/home.html',
@@ -103,7 +103,8 @@ angular.module('plop').config(function($routeProvider) {
     });
     /* Add New Routes Above */
     $routeProvider.otherwise({redirectTo:'/'});
-
+    
+    $locationProvider.html5Mode(true);
 });
 ```
 
@@ -171,13 +172,17 @@ Dans notre projet, il y a deux commandes:
 Dans le fichier `app.js`, changez la config par:
 
 ```
-$routeProvider.when('/', {
+angular.module('MONAPP').config(function($routeProvider, $locationProvider) {
+
+    $routeProvider.when('/', {
         templateUrl: 'src/app/home/home.html',
         controller: 'HomeCtrl'
+    });
+    /* Add New Routes Above */
+    $routeProvider.otherwise({redirectTo:'/'});
+    
+    $locationProvider.html5Mode(true);
 });
-
-/* Add New Routes Above */
-$routeProvider.otherwise({redirectTo:'/'});
 ```
 
 ### La premiere page
