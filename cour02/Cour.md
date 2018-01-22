@@ -147,6 +147,12 @@ options: {
       reporterOutput: ""
 ```
 
+* Ajouter dans le `<head>` de votre `index.html`
+
+```
+<base href="/">
+```
+
 * Creer des dossiers pour le code:
 
 ```
