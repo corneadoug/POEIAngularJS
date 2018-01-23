@@ -1,6 +1,6 @@
 angular.module('AngularExo02', ['ui.bootstrap','ngRoute','ngAnimate']);
 
-angular.module('AngularExo02').config(function($routeProvider, $locationProvider) {
+angular.module('AngularExo02').config(function($routeProvider) {
 
     
     $routeProvider.when('/', {
@@ -8,9 +8,7 @@ angular.module('AngularExo02').config(function($routeProvider, $locationProvider
         controller: 'HomeCtrl'
     });
     /* Add New Routes Above */
-    $routeProvider.otherwise({redirectTo:'/'});
-    
-    $locationProvider.html5Mode(true);
+    $routeProvider.otherwise({redirectTo: '/'});
 });
 
 angular.module('AngularExo02').run(function($rootScope) {
