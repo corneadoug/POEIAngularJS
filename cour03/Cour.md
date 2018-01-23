@@ -235,6 +235,27 @@ Ce qui permet entre autre de ne pas detruire les controllers et de rapidement mo
 </div>
 ```
 
+## [ng-class](#ng-class)
+
+`ng-class` permet d'ajouter une classe CSS a notre tag HTML si une condition est vrai.
+
+Dans l'example suivant, on ajoute la classe CSS `superClass` a notre `<div>` si la valeur `home.plat` est 'pizza'
+
+```
+<div ng-class="{'superClass': home.plat === 'pizza'}">
+	Pizza Hut ce soir?
+</div>
+```
+
+On peut aussi faire plusieurs conditions en meme temps
+
+```
+<div ng-class="{'superClass': home.plat === 'pizza', 'bofClass': home.plat === 'salade'}">
+	Pizza Hut ce soir?
+</div>
+```
+
+
 ## Utiliser des ternaires
 
 Petit Tips pour l'utilisation des variables dans nos vues, il est possible d'utiliser des ternaires.
