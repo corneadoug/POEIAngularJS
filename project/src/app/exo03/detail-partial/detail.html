@@ -1,0 +1,11 @@
+<div ng-controller="DetailCtrl as Detail">
+	<div id="detail" ng-if="Exo03.selectedElement">
+	<button ng-click="Detail.showHide()">Détails</button>
+		<div ng-show="Detail.visible===true">
+			<p id="titre">Titre : {{ Exo03.LETITREDUFILMSELECTIONE }}<p>
+			<p id="annee">Année de sortie : {{ Exo03.LANNEEDUFILMSELECTIONE }}</p>
+		</div>
+		
+	</div>
+
+</div>
