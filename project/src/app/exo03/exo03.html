@@ -1,10 +1,16 @@
 <div id="container">
     <div id="listeFilms" class="box">
         <h1>Liste de films</h1>
+        
+        <li ng-repeat="titre in exo03.films" ng-click = "exo03.Selected($index)">
+            <img src= "{{titre.img}}" ng-class="{'borderPink': titre.name === exo03.filmSelect.name}"> 
+        </li>
     </div>
     
     <div id="detailFilm" class="box">
         <h1>Detail du film</h1>
+        
+        <ng-include src="'src/app/exo03/detail-partial/detail.html'"></ng-include>
     </div>
 </div>
 
