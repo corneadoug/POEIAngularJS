@@ -19,10 +19,17 @@
         templateUrl: 'src/app/home/home.html',
         controller: 'HomeCtrl',
         controllerAs: 'home',
-      })
-      .otherwise({redirectTo:'/'});
+      });
+          
+      
+    $routeProvider
+      .when('/exo03', {
+        templateUrl: 'src/app/exo03/exo03.html',
+        controller: 'Exo03Ctrl',
+        controllerAs: 'Exo03',
+      }).otherwise({redirectTo:'/'});
   }
-
+    
   function RunUtils($rootScope) {
     $rootScope.safeApply = function(fn) {
       var phase = $rootScope.$$phase;

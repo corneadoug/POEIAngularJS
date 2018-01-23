@@ -1,0 +1,12 @@
+<div ng-controller="DetailCtrl as detail">
+  <div ng-if="Exo03.SelectedElement">
+	<div ng-show="detail.Visible">
+    
+      <p>Titre du film : {{ Exo03.TitreFilmSelect }}<p>
+      <p>Année de sortie : {{ Exo03.AnneFilmSelect }}</p>
+  
+    </div>
+    <button type="button" ng-click="detail.SelectionChange()" >{{ detail.Texte }}</button> 
+    
+  </div>
+</div>
