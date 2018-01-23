@@ -2,7 +2,8 @@
     'use strict';
    
     function HomeCtrl($scope) {
-      $scope.plat = "pizza";
+        $scope.plat = "pizza";
+        $scope.a = "Bye";
     }
     
     angular.module('AngularExo02')
