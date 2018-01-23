@@ -13,14 +13,21 @@
   angular.module('daproject')
     .run(RunUtils);
 
-  function AppConfig($routeProvider) {
+  function AppConfig($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'src/app/home/home.html',
         controller: 'HomeCtrl',
         controllerAs: 'home',
       })
+        .when('/exo03', {
+        templateUrl: 'src/app/exo03/exo03.html',
+        controller: 'Exo03Ctrl',
+        controllerAs: 'exo03',
+      })
       .otherwise({redirectTo:'/'});
+      
+
   }
 
   function RunUtils($rootScope) {
