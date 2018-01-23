@@ -6,7 +6,7 @@ Suite de l'Exo03
 
 A L'aide des examples du Cour03 sur [ng-click](Cour.md/#ng-click) et [ng-class](Cour.md/#ng-class)
 
-* Lors d'un click sur une image de film, sauvegardez l'image selectionnée dans `exo03.controller.js`
+* Lors d'un click sur une image de film, sauvegardez le film selectionné dans `exo03.controller.js`
 
 * L'image du film doit avoir une bordure rose quand elle est selectionnée
 
