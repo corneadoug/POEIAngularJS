@@ -28,6 +28,12 @@
         controllerAs: 'exo03',
       })
 
+       .when('/exo03/detail-partial', {
+        templateUrl: 'src/app/exo03/detail-partial/detail.html',
+        controller: 'DetailCtrl',
+        controllerAs: 'detail',
+      })
+
       .otherwise({redirectTo:'/'});
   }
 
