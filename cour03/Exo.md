@@ -10,6 +10,8 @@
 
 * Une fois l'exercice terminé, vous pourrez merger dans votre branche `master` si vous le souhaitez, la Pull Request me permettra de corriger l'exercice plus tard.
 
+* Vous devrez travailler sur le projet Angular deja present dans le dossier `project`
+
 ### Etape 02
 
 A L'aide des examples du Cour03 sur [VM](Cour.md/#view-model) et de la [page](../project/src/app/home) dans le projet:
