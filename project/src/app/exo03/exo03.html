@@ -1,0 +1,11 @@
+<div id="pageFilms">
+    <div id="listeFilms" class="couleurDiv">
+        <li ng-repeat="film in exo03.films" class="flex-item"><img ng-class="{'selected': exo03.saveIndex === $index}" ng-click="exo03.clickin($index)" ng-src="{{film.img}}"></img></li>
+</div>
+<div id="detailFilm" class="couleurDiv">
+    <ng-include src="'src/app/exo03/detail-partial/detail.html'"></ng-include>
+
+    truc truc
+
+</div>
+</div>

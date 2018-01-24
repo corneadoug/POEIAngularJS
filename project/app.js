@@ -20,9 +20,19 @@
         controller: 'HomeCtrl',
         controllerAs: 'home',
       })
+      .when('/exo03', {
+        templateUrl: 'src/app/exo03/exo03.html',
+        controller: 'Exo03Ctrl',
+        controllerAs: 'exo03',
+      })
+      .when('/exo03/detail-partial', {
+        templateUrl: 'src/app/exo03/detail-partial/detail.html',
+        controller: 'detailCtrl',
+        controllerAs: 'detail',
+      })
       .otherwise({redirectTo:'/'});
   }
-
+   
   function RunUtils($rootScope) {
     $rootScope.safeApply = function(fn) {
       var phase = $rootScope.$$phase;
