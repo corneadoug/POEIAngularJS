@@ -9,7 +9,7 @@
 
     function goToExo(exoNumber) {
       if (exoNumber === 3) {
-        $location.path('/exo03');
+        $location.path('/Exo03');
       }
     }
   }
