@@ -132,8 +132,77 @@ Vous pouvez en apprendre plus sur les promesses [ici](http://andyshora.com/promi
 
 ## [Liens](#links)
 
-Bientot
+Il y a 2 facons de rediriger vers une autre page dans notre application AngularJS.
+
+### href
+
+On peut faire un lien en utilisant le tag HTML `<a>` et sa propriete `href`. Il faudra seulement penser a rajouter `/#/` devant le chemin voulu.
+
+Les URLs en AngularJS ressemblent a: `locahost:9001/#/profile`, du coup il faut bien penser a rediriger sur `/#/profile`
+
+### Avec $location
+
+AngularJS possède un service permettant de changer de page depuis votre code Javascript.
+
+Le nom de ce service est `$location` et s'injecte comme les autres services.
+
+En utilisant `$location.path('/profile');` vous redirigez l'utilisateur sur une nouvelle page.
+
+Vous remarquerez que quand on parle de path dans le contexte d'AngularJS, on a pas besoin d'ajouter le `/#/` a notre route.
 
 ## [Directives](#directives)
 
-Bientot
+Faire une directive, c'est faire son propre tag HTML, par exemple `<ma-directive></ma-directive>`
+
+L'avantage de faire une directive c'est que cela represente un composant qui est facilement reutilisable.
+
+
+**La directive**
+
+```
+(function() {
+  'use strict';
+	
+	angular.module('daproject')
+    .directive('maDirective', function() {
+      return {
+        templateUrl: 'src/components/madirective/madirective.html',
+        restrict: 'E',
+        bindToController: {
+          pizza: '=',
+          camelCase: '='
+        },
+        controller: 'MaDirectiveController',
+        controllerAs: 'ma'
+      };
+    });
+
+})();
+```
+
+La directive a en plus besoin d'un controller et d'un fichier `.html`
+
+Dans le fichier `.html` on retrouvera notre code comme pour le cas d'un `ng-inject`, par exemple:
+
+```
+<div>{{ma.pizza}}</div>
+```
+
+Dans le modele de directive ci-dessus, voici les valeurs que vous pouvez modifier:
+
+* Le chemin du template (pour votre fichier `.html`)
+* Le nom de votre controller
+* Le nom de votre controllerAs
+* Ajouter ou enlever des elements dans l'obect `bindToController`
+
+Exemple d'utilisation de la directive:
+
+```
+<ma-directive pizza="home.plat" camel-case="home.msg"></ma-directive>
+```
+
+Dans cet exemple, la variable `pizza` est deja incluse dans le `vm` du controller de notre directive.
+
+Il y a aussi un double binding entre `home.plat` et la variable `pizza`
+
+**Attention** Tous les noms en `camelCase` comme le nom de la directive et se ses attributs, sont au format `camel-case` dans l'usage de la directive
