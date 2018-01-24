@@ -1,0 +1,25 @@
+<div class="contenerFilms">
+
+
+
+<div class="flex-item" id="listeFilms">Movies
+    
+<ul>
+	<li ng-repeat="film in exo03.films" ng-click="exo03.clickImg($index)"><img src="{{film.img}}" ng-class="{'borderPink': film.name === exo03.idFilms.name}"></li>
+</ul>
+</div>
+
+
+<div class="flex-item" id="detailsFilms">
+	<div>
+		<ng-include src="'src/app/exo03/detail-partial/detail.html'"></ng-include>
+	</div>
+
+		detailMovies
+
+</div>
+
+
+</div>
+
+</div>
