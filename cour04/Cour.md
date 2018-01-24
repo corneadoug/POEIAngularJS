@@ -172,6 +172,7 @@ L'avantage de faire une directive c'est que cela represente un composant qui est
           pizza: '=',
           camelCase: '='
         },
+	scope: {},
         controller: 'MaDirectiveController',
         controllerAs: 'ma'
       };
