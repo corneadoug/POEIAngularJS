@@ -2,7 +2,9 @@
 	<div id="listeFilmes" class="items">
 		
 		<ul>
-			<li ng-repeat="film in exo03.films"><img class="img_film" src="{{film.img}}"/></li>
+			<li ng-repeat="nom in exo03.films">
+       <img src="{{nom.img}}" ng-click="exo03.Selection($index)" ng-class="{'border-pink': nom.name === exo03.selectItem.name}"/>
+     </li>
 		</ul>
 	</div>
 
