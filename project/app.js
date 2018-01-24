@@ -21,13 +21,34 @@
         controllerAs: 'home',
       });
           
-      
     $routeProvider
       .when('/exo03', {
         templateUrl: 'src/app/exo03/exo03.html',
         controller: 'Exo03Ctrl',
         controllerAs: 'Exo03',
       }).otherwise({redirectTo:'/'});
+    
+      $routeProvider
+      .when('/exo04', {
+        templateUrl: 'src/app/exo04/exo04.html',
+        controller: 'Exo04Ctrl',
+        controllerAs: 'Exo04',
+      }).otherwise({redirectTo:'/'});
+    
+      $routeProvider
+        .when('/more', {
+          templateUrl: 'src/app/more/more.html',
+          controller: 'MoreCtrl',
+          controllerAs: 'More',
+        }).otherwise({redirectTo:'/'});
+    
+      $routeProvider
+        .when('/weather', {
+          templateUrl: 'src/components/weather/weather.html',
+          controller: 'weatherCtrl',
+          controllerAs: 'Weather',
+        }).otherwise({redirectTo:'/'});
+    
   }
     
   function RunUtils($rootScope) {
