@@ -8,12 +8,16 @@
     vm.SelectionChange = SelectionChange;
     vm.settingService = settingService;
     vm.meteoService = meteoService;
+    vm.TexteSup = TexteSup;
     
     function SelectionChange(){
       vm.settingService.city = vm.valeur;
       vm.meteoService.getMeteo();
     }
     
+    function TexteSup(){
+      $location.path('/more');
+    }
   }
 
   Exo04Ctrl.$inject = ['$location', 'settingService', 'meteoService'];

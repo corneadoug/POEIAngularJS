@@ -38,9 +38,17 @@
       $routeProvider
         .when('/more', {
           templateUrl: 'src/app/more/more.html',
-          controller: 'More04Ctrl',
-          controllerAs: 'More04',
+          controller: 'MoreCtrl',
+          controllerAs: 'More',
         }).otherwise({redirectTo:'/'});
+    
+      $routeProvider
+        .when('/weather', {
+          templateUrl: 'src/components/weather/weather.html',
+          controller: 'weatherCtrl',
+          controllerAs: 'Weather',
+        }).otherwise({redirectTo:'/'});
+    
   }
     
   function RunUtils($rootScope) {
