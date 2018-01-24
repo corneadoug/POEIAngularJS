@@ -6,8 +6,6 @@
     vm.affiche = true;
     vm.buttonAffiche = "Montrer";
 
-    
-
     vm.change = change;
 
     function change()
