@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  function exo03Ctrl() {
+  function Exo03Ctrl() {
     var vm = this;
     vm.msg = 'Welcome All!';
     vm.subMsg = 'A seed Project';
@@ -26,9 +26,9 @@
  
 
 
-  exo03Ctrl.$inject = [];
+  Exo03Ctrl.$inject = [];
 
   angular.module('daproject')
-    .controller('exo03Ctrl', exo03Ctrl);
+    .controller('Exo03Ctrl', Exo03Ctrl);
 
 })();
