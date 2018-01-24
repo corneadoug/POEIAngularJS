@@ -1,0 +1,25 @@
+<body>
+<h2> Service Météo</h2>
+	<div id="exo04container">
+		<div id="exo04smallcontainer">
+			<p>Entrez votre recherche :</p>
+			<input type="text" id="input" name="input" ng-model="Exo04.texteInput"/ >
+			<button ng-click="Exo04.clicBoutonExo04()">Search</button>
+		</div>
+	</div>
+
+	<div id='detailMeteo' ng-show="Exo04.meteoService.meteoListe[0]">
+
+		<div id='ville'>{{Exo04.service.city}}</div>
+
+		<div id='temp' ng-show="Exo04.meteoService.meteoListe[0]">
+			<img id="weathericone" src="http://openweathermap.org/img/w/{{Exo04.meteoService.meteoListe[0].weather[0].icon}}.png"/>
+			Température : {{Exo04.meteoService.meteoListe[0].main.temp}}°
+			<div>Force du vent : {{Exo04.meteoService.meteoListe[0].wind.speed}}km/h</div>
+			<div id='more'><a ng-click="Exo04.goToMore()">More</a>
+			</div>
+		</div>
+	</div>
+
+
+</body>

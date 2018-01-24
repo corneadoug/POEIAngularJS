@@ -17,8 +17,7 @@
 				vm.selectedElement = null;
 			}
 			else{
-				vm.selectedElement=null;
-				vm.selectedElement=vm.films[index];	
+				vm.selectedElement=vm.films[index];
 				vm.LETITREDUFILMSELECTIONE=vm.films[index].name;
 				vm.LANNEEDUFILMSELECTIONE=vm.films[index].year;
 			}
