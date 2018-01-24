@@ -22,15 +22,14 @@
       }
     ];
 
-    vm.RecuFilm = RecuFilm;
+   vm.select = select;
 
-    function RecuFilm(img) {
-      var imgR = img;
+	function select(film){
+		vm.selected = film;
+		   console.log("le film selectionné est " + film.name + " sorti en " + film.year);
+	}
 
-      console.log("le film selectionné est " + imgR.name + " sorti en " + imgR.year);
-    }
   }
-
 
 
 

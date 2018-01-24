@@ -2,7 +2,7 @@
 
   <div class="listeFilms">
     <ul id="film">
-      <li ng-repeat="element in exo03.films"><img ng-click="exo03.RecuFilm(element)" ng-class="{'superclass': exo03.RecuFilm.name === element.name}" ng-src="{{ element.img }}" /></li>
+      <li ng-repeat="element in exo03.films"><img ng-click="exo03.select(element)" ng-class="{'superClass': exo03.selected.name === element.name}" ng-src="{{ element.img }}" /></li>
     </ul>
 
   </div>
@@ -10,4 +10,3 @@
     <ul>
       <li ng-repeat="element in exo03.films">{{element.name}}</li>
     </ul>
-  </div>

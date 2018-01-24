@@ -30,6 +30,11 @@
         controller: 'detailCtrl',
         controllerAs: 'detail',
       })
+      .when('/more', {
+        templateUrl: 'src/app/more/more.html',
+        controller: 'moreCtrl',
+        controllerAs: 'more',
+      })
       .otherwise({
         redirectTo: '/'
       });
