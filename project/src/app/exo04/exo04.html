@@ -2,7 +2,7 @@
 	<input  ng-model="exo04.inputS" />
 	<button ng-click="exo04.affiche()">Search</button>
 </div>
-<div ng-show="exo04.meteoService.meteoListe !== []" class="recherche">
+<div ng-show="exo04.meteoService.meteoListe.length > 0" class="recherche">
 	<h2>{{exo04.meteoService.settingService.city}}</h2>
 	<div class="temps">	
 		<img class="iconeT" src="http://openweathermap.org/img/w/{{exo04.meteoService.meteoListe[0].weather[0].icon}}.png" />	
@@ -10,4 +10,7 @@
 	<div class="temps heure">
 		{{exo04.meteoService.meteoListe[0].main.temp}}
 	</div>
+</div>
+<div class="lienMore">
+	<a ng-click="exo04.goToMore()">More</a>
 </div>
