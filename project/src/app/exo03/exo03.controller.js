@@ -22,12 +22,12 @@
       }
     ];
 
-   vm.select = select;
+    vm.select = select;
 
-	function select(film){
-		vm.selected = film;
-		   console.log("le film selectionné est " + film.name + " sorti en " + film.year);
-	}
+    function select(film) {
+      vm.selected = film;
+      console.log("le film selectionné est " + film.name + " sorti en " + film.year);
+    }
 
   }
 
