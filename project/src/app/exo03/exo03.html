@@ -1,0 +1,16 @@
+<div id="exo03-page">
+  <div id="conteneur">
+      <div class="element" id="listeFilmes">
+
+          <ul>
+            <li ng-repeat="affiche in exo03.films"> <img class="images" src="{{affiche.img}}"></img></li>
+          </ul>
+
+      </div>
+      <div class="element" id="detailFilm">
+          <div>
+          <ng-include src="'src/app/exo03/detail-partial/detail.html'"></ng-include>
+          </div>
+      </div>
+  </div>
+</div>
