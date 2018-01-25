@@ -1,0 +1,12 @@
+<div class="finalBoite">
+    <input type="text" ng-model="Final.valeur"/>
+    <button type="button"  ng-click="Final.SelectionChange()">Buvons!</button>
+</div>
+<div>
+  <p style="text-align: center; font-size: 2em" ng-show="Final.searchConfigservice.ingredient.length >0"> Cocktails à base de {{Final.searchConfigservice.ingredient}}</p>
+</div>
+<div>
+    <li ng-repeat="cocktail in Final.cocktailSearchservice.cocktailList">
+        <cocktail cocktail-element="cocktail"></cocktail>
+    </li>
+</div>

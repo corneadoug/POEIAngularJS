@@ -49,6 +49,27 @@
           controllerAs: 'Weather',
         }).otherwise({redirectTo:'/'});
     
+      $routeProvider
+        .when('/final', {
+          templateUrl: 'src/app/final/final.html',
+          controller: 'FinalCtrl',
+          controllerAs: 'Final',
+        }).otherwise({redirectTo:'/'});
+    
+      $routeProvider
+        .when('/cocktail', {
+          templateUrl: 'src/components/cocktail/cocktail.html',
+          controller: 'CocktailCtrl',
+          controllerAs: 'Cocktail',
+        }).otherwise({redirectTo:'/'});
+    
+      $routeProvider
+        .when('/cocktailDetail', {
+          templateUrl: 'src/app/cocktailDetail/cocktailDetail.html',
+          controller: 'CocktailDetailCtrl',
+          controllerAs: 'CocktailDetail',
+        }).otherwise({redirectTo:'/'});
+    
   }
     
   function RunUtils($rootScope) {
