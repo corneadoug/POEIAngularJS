@@ -1,0 +1,13 @@
+<div class="exo03bigdiv">
+    <div class="exo03div" id="listeFilmes">
+       
+        <li ng-repeat="image in Exo03.films">
+            <img ng-click="Exo03.SelectImage($index)" ng-class="{'active' : Exo03.SelectedElement.name === image.name}" src='{{image.img}}'>
+        </li>
+       
+    </div>
+    <div class="exo03div" id="detailFilm">
+        <ng-include src="'src/app/exo03/detail-partial/detail.html'">
+        </ng-include>
+    </div>
+</div>

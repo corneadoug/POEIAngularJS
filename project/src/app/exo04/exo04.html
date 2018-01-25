@@ -1,0 +1,12 @@
+<div class="exo04Boite">
+    <input type="text" ng-model="Exo04.valeur"/>
+    <button type="button" ng-click="Exo04.SelectionChange()" >search</button>
+</div>
+<div>
+  <h2 class="centre">{{Exo04.settingService.city}}</h2>
+</div>
+<div class="centre" ng-show="Exo04.meteoService.meteoListe.length >0">
+  <img class="block" src="http://openweathermap.org/img/w/{{Exo04.meteoService.meteoListe[0].weather[0].icon}}.png" />
+  <h2 class="block">{{Exo04.meteoService.meteoListe[0].main.temp}}</h2>
+  <h2 ng-click="Exo04.TexteSup()">More</h2>
+</div>
