@@ -3,7 +3,7 @@
 
   function DetailCtrl() {
     var vm = this;
-    vm.plat = "pasta";
+    vm.plat = 'pasta';
 }
    
 

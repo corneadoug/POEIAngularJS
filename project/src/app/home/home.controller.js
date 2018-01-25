@@ -11,6 +11,9 @@
       if (exoNumber === 3) {
         $location.path('/exo03');
       }
+      if (exoNumber === 4) {
+        $location.path('/exo04');
+      }
     }
   }
 
