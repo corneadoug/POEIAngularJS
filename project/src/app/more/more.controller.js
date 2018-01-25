@@ -1,7 +1,7 @@
 (function () {
-    'use strict';
+  'use strict';
 
-    function MoreCtrl($location) {
-      var vm = this;
-
-    })();
+  function MoreCtrl($location) {
+    var vm = this;
+  }
+})();

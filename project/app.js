@@ -30,6 +30,11 @@
         controller: 'detailCtrl',
         controllerAs: 'detail',
       })
+      .when('/exo04', {
+        templateUrl: 'src/app/exo04/exo04.html',
+        controller: 'exo04Ctrl',
+        controllerAs: 'exo04',
+      })
       .when('/more', {
         templateUrl: 'src/app/more/more.html',
         controller: 'moreCtrl',
