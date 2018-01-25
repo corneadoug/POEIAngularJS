@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   angular.module('daproject', [
@@ -20,14 +20,41 @@
         controller: 'HomeCtrl',
         controllerAs: 'home',
       })
-      .otherwise({redirectTo:'/'});
+      .when('/exo03', {
+        templateUrl: 'src/app/exo03/exo03.html',
+        controller: 'exo03Ctrl',
+        controllerAs: 'exo03',
+      })
+      .when('/exo03/detail-partial', {
+        templateUrl: 'src/app/exo03/detail-partial/detail.html',
+        controller: 'detailCtrl',
+        controllerAs: 'detail',
+      })
+      .when('/exo04', {
+        templateUrl: 'src/app/exo04/exo04.html',
+        controller: 'exo04Ctrl',
+        controllerAs: 'exo04',
+      })
+      .when('/more', {
+        templateUrl: 'src/app/more/more.html',
+        controller: 'moreCtrl',
+        controllerAs: 'more',
+      })
+      .when('/final', {
+        templateUrl: 'src/app/final/final.html',
+        controller: 'finalCtrl',
+        controllerAs: 'final',
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
   }
 
   function RunUtils($rootScope) {
-    $rootScope.safeApply = function(fn) {
+    $rootScope.safeApply = function (fn) {
       var phase = $rootScope.$$phase;
       if (phase === '$apply' || phase === '$digest') {
-        if (fn && (typeof(fn) === 'function')) {
+        if (fn && (typeof (fn) === 'function')) {
           fn();
         }
       } else {

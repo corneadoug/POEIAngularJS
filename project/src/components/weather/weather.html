@@ -1,0 +1,12 @@
+<div style="background-color: white;" ng-show="exo04.meteoService.city != '' ">
+
+	<div class="temps">	
+		<img class="iconeT" src="http://openweathermap.org/img/w/{{weather.meteoElement.weather[0].icon}}.png" />	
+	</div>
+	<div class="temps heure">
+		{{weather.meteoElement.main.temp}}
+	</div>
+	<div>
+		{{weather.meteoElement.dt_txt}}
+	</div>
+</div>
