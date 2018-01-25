@@ -22,8 +22,13 @@
       })
       .when('/exo03', {
         templateUrl: 'src/app/exo03/exo03.html',
-        controller: 'exo03Ctrl',
+        controller: 'Exo03Ctrl',
         controllerAs: 'exo03',
+      })
+      .when('/exo04', {
+        templateUrl: 'src/app/exo04/exo04.html',
+        controller: 'Exo04Ctrl',
+        controllerAs: 'exo04',
       })
       .otherwise({redirectTo:'/'});
   }
