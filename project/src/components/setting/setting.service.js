@@ -3,10 +3,10 @@
 
   function settingService() {
     var service = {};
-    service.city = '';
-    service.isCelsius = true;
+    service.ingredient = '';
 
-    console.log(service.city);
+
+    console.log(service.ingredient);
     return service;
   }
 
