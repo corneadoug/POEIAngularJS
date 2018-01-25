@@ -1,0 +1,10 @@
+<div class="recherche">
+	<input  ng-model="final.inputS" />
+	<button ng-click="final.affiche()">Buvons!</button>
+	<h2 class="ingred"> - {{final.searchConfigService.ingredient}}</h2>
+	
+</div>
+<div ng-repeat="nom in final.cocktailSearchService.cocktailList">
+	<cocktail cocktail-element="nom"></cocktail>
+</div>
+
