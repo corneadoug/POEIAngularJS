@@ -47,7 +47,7 @@ Nous allons comme dans l'Exo04 creer une barre de recherche, elle sera composé:
 * Dans notre fonction `getCockails` nous allons devoir faire une requete `$http.get()`
 	* L'URL de la Requete est: `http://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Vodka`
 	* Il faudra remplacer `Vodka` par la variable `ingredient` de notre service `searchConfig`
-	* En cas de success de la requete, `cocktailList = response.drinks`
+	* En cas de success de la requete, `cocktailList = response.data.drinks`
 	* En cas d'erreur de la requete, `cocktailList = []`
 * Appeler la fonction `getCocktails` lorsque l'on appuie sur le boutton `Buvons!`
 
