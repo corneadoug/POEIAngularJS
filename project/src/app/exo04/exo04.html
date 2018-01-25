@@ -1,0 +1,13 @@
+<div id="exo04-page">
+  <div class="centrer">
+    <input class="marge_droite" ng-model="exo04.a"/>
+    <button ng-click="exo04.clic()" label="search">CLIC</button>
+  </div>
+  <div class="centrer gros">
+    {{exo04.setting.city}}
+  </div>
+  <div>
+    <img src="http://openweathermap.org/img/w/' + {{exo04.service.meteoListe.weather[0].icon}} + '.png"></img>
+    <p>{{exo04.service.meteoListe.main.temp}}</p>
+  </div>
+</div>

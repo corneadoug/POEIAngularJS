@@ -4,8 +4,8 @@
 
   function DetailCtrl() {
     var vm = this;
-    vm.plat = "pizza";
-    vm.boisson = "coca";
+    vm.plat = 'pizza';
+    vm.boisson = 'coca';
     vm.liste = [
       {name: 'Jean'},
       {name: 'Luc'},

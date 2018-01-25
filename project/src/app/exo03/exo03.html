@@ -1,11 +1,9 @@
 <div id="exo03-page">
   <div id="conteneur">
       <div class="element" id="listeFilmes">
-
           <ul>
-            <li ng-repeat="affiche in exo03.films"> <img class="images" src="{{affiche.img}}"></img></li>
+            <li ng-repeat="affiche in exo03.films"> <img ng-class="{'superClass' : exo03.selected.name === film.name}" ng-click="exo03.select(film)" class="images" src="{{affiche.img}}"></img></li>
           </ul>
-
       </div>
       <div class="element" id="detailFilm">
           <div>

@@ -1,8 +1,6 @@
 (function() {
   'use strict';
 
-
-
 function Exo03Ctrl() {
   var vm = this;
   vm.films = [
