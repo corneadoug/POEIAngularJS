@@ -7,7 +7,7 @@
       service.setting = settingService;
 
 
-    function getMeteo(){
+    /*function getMeteo(){
       return $http.get('http://api.openweathermap.org/data/2.5/forecast?q=' + setting.service.city +'&APPID=8b691ba261364ecfcccedf51c705f77d&units=metric')
             .then(function(response){
                 service.meteoList = response.data.list;
@@ -17,7 +17,7 @@
                 service.meteoList = [];
                 console.log('Error: %o', error);
             });
-  }
+  }*/
       return service;
     }
 

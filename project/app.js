@@ -30,6 +30,11 @@
         controller: 'Exo04Ctrl',
         controllerAs: 'exo04',
       })
+      .when('/final', {
+        templateUrl: 'src/app/final/final.html',
+        controller: 'FinalCtrl',
+        controllerAs: 'final',
+      })
       .otherwise({redirectTo:'/'});
   }
 
