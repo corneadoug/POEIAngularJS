@@ -72,7 +72,7 @@ Helas, notre requete ne nous donne pas les details de la boisson, il va falloir 
 * Cette fonction prendra un parametre `cocktailId`
 * Cette fonction devra faire une requete `$http.get()` et son URL est `http://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=13060`
 * Et il faudra remplacer la valeur `13060` par le `cocktailId`
-* En cas de success de la requete, `cocktailDetail = response.drinks[0]`
+* En cas de success de la requete, `cocktailDetail = response.data.drinks[0]`
 * En cas d'erreur de la requete, `cocktailDetail = {}`
 
 ## Etape 08 - Une page descriptive
