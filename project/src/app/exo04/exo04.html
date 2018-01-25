@@ -1,0 +1,8 @@
+<div class="contener">
+	<input class="element" ng-model="exo04.a" />
+	<button class="element" label="search" ng-click="exo04.meteo.getMeteo()">CONFIRM</button>
+</div>
+<div class="contener gros">{{exo04.setting.city}}</div>
+<div><img src="http://openweathermap.org/img/w/{{exo04.service.meteoList.weather[0].icon}}.png">
+	<p>{{exo04.service.meteoList.main.temp}}</p>
+</div>
