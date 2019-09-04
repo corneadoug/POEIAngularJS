@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html ng-app="daproject">
+<html ng-app="AngularExo02">
 <head>
-  <title>Find The Word - Yet another AngularJS experiment</title>
-  <base href="/" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta charset="utf-8" />
-  <link href="app.less" type="text/css" rel="stylesheet/less" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="app.less" type="text/css" rel="stylesheet/less">
 </head>
 <body>
 
@@ -19,6 +16,7 @@
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="bower_components/lodash/dist/lodash.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-animate/angular-animate.js"></script>
@@ -26,15 +24,20 @@
   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
   <!-- Add New Bower Component JS Above -->
 
+
   <!-- Main App JS -->
   <script src="app.js"></script>
   <script src="src/app/home/home.controller.js"></script>
-    <script src="src/app/exo03/exo03.controller.js"></script>
-    <script src="src/app/exo03/detail-partial/detail.controller.js"></script>
   <!-- Add New Component JS Above -->
 
-  <toast></toast>
-  <div ng-view></div>
+  <div>
+    <div id="content" class="container">
+      <div class="row">
+        <div ng-view>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
