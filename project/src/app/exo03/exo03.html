@@ -1,0 +1,10 @@
+<div id="exo03-page">
+	<div id="listeFilmes">
+		<ul id="film">
+			<li ng-repeat="film in exo03.films"><img ng-class="{'superClass': exo03.selected.name === film.name}" ng-click="exo03.select(film)" src="{{film.image}}"/></li>
+		</ul>
+	</div>
+	<div id="detailFilm">
+		<ng-include src="'src/app/exo03/detail-partial/detail.html'"></ng-include>
+	</div>
+</div>
