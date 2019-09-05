@@ -1,0 +1,20 @@
+<div ng-controller = "Exo03Ctrl" id="Exo03-page">
+
+    <div class ="listeFilms">liste Films
+       <div ng-repeat="element in exo03.films">
+        <img class="img" ng-src="{{ element.img }}" ng-click="Exo03Ctrl.clicphoto($index)" ng-class = "{'highlight': film.select === true}" />
+        </div>
+
+    </div>
+
+    <div class ="detailFilm">
+
+        <ng-include src="'src/app/Exo03/detail-partial/detail.html'"></ng-include>
+        <ul>
+	       <li ng-repeat="film in exo03.films">{{film.name}}</li>
+        </ul>
+
+    </div>
+
+
+</div>
