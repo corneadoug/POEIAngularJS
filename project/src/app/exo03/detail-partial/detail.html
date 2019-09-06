@@ -1,0 +1,9 @@
+<div ng-controller="DetailCtrl as detail">
+	<div ng-if="exo03.selectItem">
+		<div ng-show="detail.affiche == false">
+			<p>{{ exo03.selectItem.name}}</p>
+			<p>{{ exo03.selectItem.year}}</p>
+		</div>
+		<button ng-click="detail.change()">{{detail.buttonAffiche}}</button>
+	</div>
+</div>

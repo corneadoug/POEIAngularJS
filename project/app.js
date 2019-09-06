@@ -20,6 +20,31 @@
         controller: 'HomeCtrl',
         controllerAs: 'home',
       })
+      .when('/exo03', {
+        templateUrl: 'src/app/exo03/exo03.html',
+        controller: 'Exo03Ctrl',
+        controllerAs: 'exo03',
+      })
+      .when('/exo04', {
+        templateUrl: 'src/app/exo04/exo04.html',
+        controller: 'Exo04Ctrl',
+        controllerAs: 'exo04',
+      })      
+      .when('/more', {
+        templateUrl: 'src/app/more/more.html',
+        controller: 'MoreCtrl',
+        controllerAs: 'more',
+      })
+      .when('/final', {
+        templateUrl: 'src/app/final/final.html',
+        controller: 'FinalCtrl',
+        controllerAs: 'final',
+      })
+      .when('/exo03/detail-partial', {
+        templateUrl: 'src/app/exo03/detail-partial/detail.html',
+        controller: 'DetailCtrl',
+        controllerAs: 'detail',
+      })
       .otherwise({redirectTo:'/'});
   }
 
